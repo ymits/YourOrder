@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1">
+		<title>Your Order</title>
+		<link rel="stylesheet" href="javascript/lib/jquery.mobile-1.1.1.css" />
+		<link rel="stylesheet" href="stylesheet/main.css">
+		<script src="javascript/lib/jquery-1.8.1.js"></script>
+		<script src="javascript/lib/jquery.mobile-1.1.1.js"></script>
+	</head>
+    <body>
+        <div data-role="page" id="top">
+        	<div data-role="header">
+        		<h1>Your Order</h1>
+        	</div>
+        	<div data-role="content">
+	        	<form action="book_list.html" method="post" data-transition="slide">
+					<ul data-role="listview" data-divider-theme="f" class="search-bar">
+						<li data-role="list-divider">
+							<input type="search" placeholder="メニュー検索" data-mini="true" data-theme="c">
+							<input type="submit" value="検索" data-mini="true" data-inline="true" data-theme="d">
+						</li>
+					</ul>
+				</form>
+	        	<section>
+					<div class="tabs">
+						<div class="ui-grid-a">
+							<div class="ui-block-a"><a href="#" data-role="button" data-theme="d" data-tab="tab-a" class="ui-btn-active">メニュー</a></div>
+							<div class="ui-block-b"><a href="#" data-role="button" data-theme="d" data-tab="tab-b">おすすめ</a></div>
+						</div>
+					</div>
+					<div class="tab-contents">
+						<div data-role="collapsible-set">
+							<section data-role="collapsible" data-content-theme="d">
+								<h1>フェア</h1>
+								<ul data-role="listview" data-inset="true"　data-theme="d">
+									<li><a href="book_detail.html"><h1>ちゅるしこ夏冷麺</h1></a></li>
+									<li><a href="book_detail.html"><h1>おすすめ夏カレー</h1></a></li>
+									<li><a href="book_detail.html"><h1>おすすめフェアメニュー</h1></a></li>
+									<li><a href="book_detail.html"><h1>今だけお得！サービスセット</h1></a></li>
+								</ul>
+							</section>
+							<section data-role="collapsible" data-content-theme="d">
+								<h1>グランド</h1>
+								<ul data-role="listview" data-inset="true"　data-theme="d">
+									<li><a href="hamburg-list.html" data-transition="slide"><h1>ハンバーグ</h1></a></li>
+									<li><a href="book_detail.html"><h1>ビーフ／チキン</h1></a></li>
+									<li><a href="book_detail.html"><h1>和善</h1></a></li>
+									<li><a href="book_detail.html"><h1>パスタ／ピザ</h1></a></li>
+									<li><a href="book_detail.html"><h1>ライトミール</h1></a></li>
+									<li><a href="book_detail.html"><h1>サラダ／お惣菜</h1></a></li>
+									<li><a href="book_detail.html"><h1>飯／パン／スープ／汁</h1></a></li>
+								</ul>
+							</section>
+							<section data-role="collapsible" data-content-theme="d">
+								<h1>デザート</h1>
+								<ul data-role="listview" data-inset="true"　data-theme="d">
+									<li><a href="book_detail.html"><h1>デザート</h1></a></li>
+									<li><a href="book_detail.html"><h1>カキ氷</h1></a></li>
+								</ul>
+							</section>
+							<section data-role="collapsible" data-content-theme="d">
+								<h1>キッズ</h1>
+								<ul data-role="listview" data-inset="true"　data-theme="d">
+									<li><a href="book_detail.html"><h1>デザート</h1></a></li>
+									<li><a href="book_detail.html"><h1>カキ氷</h1></a></li>
+								</ul>
+							</section>
+							<section data-role="collapsible" data-content-theme="d">
+								<h1>日替わりランチ</h1>
+								<ul data-role="listview" data-inset="true"　data-theme="d">
+									<li><a href="book_detail.html"><h1>デザート</h1></a></li>
+									<li><a href="book_detail.html"><h1>カキ氷</h1></a></li>
+								</ul>
+							</section>
+							<section data-role="collapsible" data-content-theme="d">
+								<h1>ランチ</h1>
+								<ul data-role="listview" data-inset="true"　data-theme="d">
+									<li><a href="book_detail.html"><h1>デザート</h1></a></li>
+									<li><a href="book_detail.html"><h1>カキ氷</h1></a></li>
+								</ul>
+							</section>
+							<section data-role="collapsible" data-content-theme="d">
+								<h1>モーニング</h1>
+								<ul data-role="listview" data-inset="true"　data-theme="d">
+									<li><a href="book_detail.html"><h1>デザート</h1></a></li>
+									<li><a href="book_detail.html"><h1>カキ氷</h1></a></li>
+								</ul>
+							</section>
+							<section data-role="collapsible" data-content-theme="d">
+								<h1>ドリンク</h1>
+								<ul data-role="listview" data-inset="true"　data-theme="d">
+									<li><a href="book_detail.html"><h1>デザート</h1></a></li>
+									<li><a href="book_detail.html"><h1>カキ氷</h1></a></li>
+								</ul>
+							</section>
+						</div>
+						<!--
+						<ul data-role="listview" data-theme="d" id="tab-a">
+							<li data-role="list-divider"></li>
+							<li><h1>フェア</h1>
+								<ul>
+									<li><a href="book_detail.html"><h1>ちゅるしこ夏冷麺</h1></a></li>
+									<li><a href="book_detail.html"><h1>おすすめ夏カレー</h1></a></li>
+									<li><a href="book_detail.html"><h1>おすすめフェアメニュー</h1></a></li>
+									<li><a href="book_detail.html"><h1>今だけお得！サービスセット</h1></a></li>
+								</ul>
+							</li>
+							<li data-role="list-divider"></li>
+						</ul>
+						<ul data-role="listview" data-theme="d" id="tab-b" style="display: none;">
+						</ul>
+						-->
+					</div>
+				</section>
+			</div>
+        </div>
+    </body>
+</html>
